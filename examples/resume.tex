@@ -37,7 +37,11 @@
 % \definecolor{darktext}{HTML}{414141}
 % \definecolor{text}{HTML}{333333}
 \definecolor{graytext}{HTML}{5D5D5D}
-\definecolor{lighttext}{HTML}{edf2f7}
+\definecolor{lighttext}{HTML}{839496}
+\definecolor{solgreen}{HTML}{859900}
+\definecolor{solbase}{HTML}{073642} %002b36
+\definecolor{soltext}{HTML}{839496}
+\definecolor{solo}{HTML}{b58900}
 
 
 % Set false if you don't want to highlight section with awesome color
@@ -69,20 +73,23 @@
 % \reddit{reddit-id}
 % \extrainfo{extra informations}
 
+
 \quote{
-\colorbox{lighttext}{\parbox{.4\textwidth}{
+\colorbox{solbase}{\parbox{.4\textwidth}{
   \begin{minipage}{8cm}
-      \textcolor{awesome}{hire\_Brandon} -> function( your\_Needs, brandons\_Skillz) \{\\
+      \textcolor{soltext}{hire\_Brandon} \textcolor{solo}{<-} \textcolor{solgreen}{function}\textcolor{solo}{(} \textcolor{soltext}{your\_Needs,} \textcolor{soltext}{brandons\_Skillz}\textcolor{solo}{)} \textcolor{solo}{\{}\\
       \parindent=3em %indent
-      \indent if( identical( your\_Needs,  brandons\_Skillz ) ) \{ \\
+      \indent \textcolor{solgreen}{if}\textcolor{solo}{(} \textcolor{soltext}{identical}\textcolor{solo}{(} \textcolor{soltext}{your\_Needs,} \textcolor{soltext}{brandons\_Skillz} \textcolor{solo}{)} \textcolor{solo}{)}  \textcolor{solo}{\{} \\
       \parindent=5em %indent
-      \indent print(\textcolor{awesome}{"DEFINITELY"}) \} else \{ \\
+      \indent \textcolor{soltext}{print}\textcolor{solo}{(}\textcolor{awesome}{``Definitely!''}\textcolor{solo}{)}  \textcolor{solo}{\}} \textcolor{solgreen}{else} \textcolor{solo}{\{} \\
       \parindent=7em %indent
-      \indent print(\textcolor{awesome}{"At Least Call?"}) \} \} \\
+      \indent \textcolor{soltext}{print}\textcolor{solo}{(}\textcolor{awesome}{``At Least Call?''} \textcolor{solo}{)}\\
+      \parindent=7em 
+      \indent \textcolor{solo}{\}} \\
+      \parindent=5em 
+      \indent \textcolor{solo}{\}} 
     \end{minipage}
 }}}
-
-%\parindent=3em %indent
 
 
 %-------------------------------------------------------------------------------
@@ -104,7 +111,6 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-%\input{resume/hirebrandon.tex}
 \input{resume/programming.tex}
 \input{resume/education.tex}
 \input{resume/experience.tex}
