@@ -702,3 +702,13 @@
       \letterenclosurestyle{\@letterenclname: \@letterenclosure} \\
     }
 }
+
+
+% test environment 
+\newenvironment{bquoted}{%
+  \vspace{-4.0mm}
+  \begin{justify}
+}{%
+  \end{justify}
+  \vspace{-4.0mm}
+}

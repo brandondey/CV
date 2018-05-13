@@ -68,15 +68,22 @@
 % \skype{skype-id}
 % \reddit{reddit-id}
 % \extrainfo{extra informations}
-% \linebreak 
 
-
-\quote{\colorbox{lighttext}{\parbox{0.4\textwidth}{\textcolor{awesome}{hire\_Brandon}   <-   function ( your\_Needs, brandons\_Skillz) \{ \linebreak 
-  if(identical(your\_Needs, brandons\_Skillz) ) \{ \linebreak 
-    print(\textcolor{awesome}{"DEFINITELY"}) \} else \{ \linebreak 
-      print(\textcolor{awesome}{"At least call"}) \} \}
+\quote{
+\colorbox{lighttext}{\parbox{.4\textwidth}{
+  \begin{minipage}{8cm}
+      \textcolor{awesome}{hire\_Brandon} -> function( your\_Needs, brandons\_Skillz) \{\\
+      \parindent=3em %indent
+      \indent if( identical( your\_Needs,  brandons\_Skillz ) ) \{ \\
+      \parindent=5em %indent
+      \indent print(\textcolor{awesome}{"DEFINITELY"}) \} else \{ \\
+      \parindent=7em %indent
+      \indent print(\textcolor{awesome}{"At Least Call?"}) \} \} \\
+    \end{minipage}
 }}}
-  
+
+%\parindent=3em %indent
+
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -97,11 +104,12 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
+%\input{resume/hirebrandon.tex}
+\input{resume/programming.tex}
 \input{resume/education.tex}
 \input{resume/experience.tex}
 \input{resume/honors.tex}
-\input{resume/writing.tex}
-\input{resume/extracurricular.tex}
+%\input{resume/writing.tex}
 %\input{resume/summary.tex}
 %\input{resume/committees.tex}
 %\input{resume/presentation.tex}
