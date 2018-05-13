@@ -78,6 +78,7 @@
 \RequirePackage[default,opentype]{sourcesanspro}
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
+\usepackage{tcolorbox} % testing
 % Needed to deal a paragraphs
 \RequirePackage{parskip}
 % Needed to deal hyperlink

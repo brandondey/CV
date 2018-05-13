@@ -28,17 +28,17 @@
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+%                 awesome-nephritis (green), awesome-concrete, awesome-darknight (black)
+%\colorlet{awesome}{awesome-emerald}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
-
+\definecolor{awesome}{HTML}{00b8d4} % same color as brandondey.github.io
 % Colors for text
 % Uncomment if you would like to specify your own color
 % \definecolor{darktext}{HTML}{414141}
 % \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
+\definecolor{graytext}{HTML}{5D5D5D}
+\definecolor{lighttext}{HTML}{edf2f7}
+
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -53,24 +53,30 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
-\name{Byungjin}{Park}
-\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
-\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+\name{Brandon}{Dey}
+\position{Data Scientist} % put {\enskip\cdotp\enskip} to put a "." after position text.
+\address{5590 N. Diversey Blvd. Milwaukee, Wi 53217}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+\mobile{(414) 491 - 5234}
+\email{brandonwdey@gmail.com}
+\homepage{brandondey.github.io}
+\github{brandondey}
+\linkedin{brandondey}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
 % \skype{skype-id}
 % \reddit{reddit-id}
 % \extrainfo{extra informations}
+% \linebreak 
 
-\quote{``Be the change that you want to see in the world."}
 
+\quote{\colorbox{lighttext}{\parbox{0.4\textwidth}{\textcolor{awesome}{hire\_Brandon}   <-   function ( your\_Needs, brandons\_Skillz) \{ \linebreak 
+  if(identical(your\_Needs, brandons\_Skillz) ) \{ \linebreak 
+    print(\textcolor{awesome}{"DEFINITELY"}) \} else \{ \linebreak 
+      print(\textcolor{awesome}{"At least call"}) \} \}
+}}}
+  
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -83,7 +89,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Résumé}
+  {Brandon W. Dey~~~·~~~Résumé}
   {\thepage}
 
 
@@ -91,15 +97,13 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{resume/summary.tex}
+\input{resume/education.tex}
 \input{resume/experience.tex}
 \input{resume/honors.tex}
-\input{resume/presentation.tex}
 \input{resume/writing.tex}
-\input{resume/committees.tex}
-\input{resume/education.tex}
 \input{resume/extracurricular.tex}
-
-
+%\input{resume/summary.tex}
+%\input{resume/committees.tex}
+%\input{resume/presentation.tex}
 %-------------------------------------------------------------------------------
 \end{document}
